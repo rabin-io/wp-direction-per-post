@@ -1,13 +1,13 @@
 <?php
 
 /************************************************************
- * Plugin Name: Direction per post
+ * Plugin Name: Direction Per Post
  * Plugin URI: http://blog.rabin.io
- * Description: A brief description of the Plugin.
+ * Description: Set the display direction for title/content per post
  * Version: 0.1
- * Author: Rabin
+ * Author: Rabin.IO
  * Author URI: http://blog.rabin.io
- * License: A "Slug" license name e.g. GPL2
+ * License: GPL2
  ************************************************************/
 
 function set_content_direction ($text) {  
