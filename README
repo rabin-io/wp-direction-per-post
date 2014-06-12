@@ -1,0 +1,4 @@
+* Just Clone the repo to WP plugins directory
+
+  cd [wp-installation-dir]/wp-content/plugins/
+  git clone https://github.com/rabin-io/wp-direction-per-post.git
