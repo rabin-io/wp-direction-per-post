@@ -61,11 +61,16 @@ add_action( 'save_post', 'set_post_direction' );
 
 /* Display custom column */
 function display_posts_direction( $column, $post_id ) {
-    
-    $post_direction = get_post_meta( $post_id, 'post_direction' , $single = true);
-    echo 'Tile   : ' . $post_direction['title'] . '</br>';
-    echo 'Content: ' . $post_direction['content'] . '</br>';
-    //var_dump($post_direction);
+
+ 	switch ( $column ) {
+	case 'post_direction':
+	    $post_direction = get_post_meta( $post_id, 'post_direction' , $single = true);
+	    echo 'Tile   : ' . $post_direction['title'] . '</br>';
+	    echo 'Content: ' . $post_direction['content'] . '</br>';
+    	//var_dump($post_direction);
+	break;
+	default:
+	}
     
 }
 add_action( 'manage_posts_custom_column' , 'display_posts_direction', 10, 2);
